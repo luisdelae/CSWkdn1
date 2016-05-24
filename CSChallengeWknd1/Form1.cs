@@ -13,9 +13,8 @@ namespace CSChallengeWknd1
     public partial class frmEmployees : Form
     {
         double empSalaryCostMonthly = 0;
-        //List<List<string>> empDataList = new List<List<string>>();
 
-        List<string> empDataList = new List<string>();
+        List<Employee> empDataList = new List<Employee>();
 
         public frmEmployees()
         {
@@ -25,24 +24,27 @@ namespace CSChallengeWknd1
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             empSalaryCostMonthly += Convert.ToDouble(txtSalary.Text);
-            lblCostOfSalaryMonthly.Text = "$" + Convert.ToString(empSalaryCostMonthly);
+            lblCostOfSalaryMonthly.Text = "$" + Convert.ToString(empSalaryCostMonthly/12);
 
-            //Might need to add an array instead of strings to be able to delete the list.selectedindex 
-            //at the selected item, and delete index at [4] of this selected item for it to
-            //subtract the salary from the total once the employee is deleted
-            empDataList.Add(txtId.Text + "\t\t" + txtFirstName.Text + "\t\t" + txtLastName.Text + "\t\t" + txtTitle.Text + "\t\t" + txtSalary.Text + "\n");
-            //List<string> empInfo = new List<string> { Convert.ToString(txtId), Convert.ToString(txtFirstName), Convert.ToString(txtLastName)
-            //    , Convert.ToString(txtTitle), Convert.ToString(txtSalary) };
-            //empDataList.Add(empInfo);
+            empDataList.Add(new Employee
+            {
+                EmpID = Convert.ToInt32(txtId.Text),
+                FirstName = txtFirstName.Text,
+                LastName = txtLastName.Text,
+                Title = txtTitle.Text,
+                Salary = Convert.ToDouble(txtSalary.Text)
+            });
+            
             lstEmployeeData.DataSource = empDataList.ToList();
+            
         }
 
         private void btnDelEmployee_Click(object sender, EventArgs e)
-        { 
-            empDataList.RemoveAt(lstEmployeeData.SelectedIndex);
+        {
+            empSalaryCostMonthly -= empDataList[lstEmployeeData.SelectedIndex].Salary;
+            lblCostOfSalaryMonthly.Text = Convert.ToString(empSalaryCostMonthly/12);
 
-            //empSalaryCostMonthly -= Convert.ToDouble(empDataList[lstEmployeeData.SelectedIndex]);
-            //lblCostOfSalaryMonthly.Text = Convert.ToString(empSalaryCostMonthly);
+            empDataList.RemoveAt(lstEmployeeData.SelectedIndex);
 
             lstEmployeeData.DataSource = null;
             lstEmployeeData.DataSource = empDataList.ToArray();
