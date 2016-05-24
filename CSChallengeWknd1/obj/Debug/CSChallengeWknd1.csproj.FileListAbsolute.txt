@@ -1,0 +1,9 @@
+C:\Users\Luisdela\Desktop\TUTORIAL PROJECTS\Challenges\CSChallengeWknd1\CSChallengeWknd1\bin\Debug\CSChallengeWknd1.exe.config
+C:\Users\Luisdela\Desktop\TUTORIAL PROJECTS\Challenges\CSChallengeWknd1\CSChallengeWknd1\bin\Debug\CSChallengeWknd1.exe
+C:\Users\Luisdela\Desktop\TUTORIAL PROJECTS\Challenges\CSChallengeWknd1\CSChallengeWknd1\bin\Debug\CSChallengeWknd1.pdb
+C:\Users\Luisdela\Desktop\TUTORIAL PROJECTS\Challenges\CSChallengeWknd1\CSChallengeWknd1\obj\Debug\CSChallengeWknd1.csprojResolveAssemblyReference.cache
+C:\Users\Luisdela\Desktop\TUTORIAL PROJECTS\Challenges\CSChallengeWknd1\CSChallengeWknd1\obj\Debug\CSChallengeWknd1.frmEmployees.resources
+C:\Users\Luisdela\Desktop\TUTORIAL PROJECTS\Challenges\CSChallengeWknd1\CSChallengeWknd1\obj\Debug\CSChallengeWknd1.Properties.Resources.resources
+C:\Users\Luisdela\Desktop\TUTORIAL PROJECTS\Challenges\CSChallengeWknd1\CSChallengeWknd1\obj\Debug\CSChallengeWknd1.csproj.GenerateResource.Cache
+C:\Users\Luisdela\Desktop\TUTORIAL PROJECTS\Challenges\CSChallengeWknd1\CSChallengeWknd1\obj\Debug\CSChallengeWknd1.exe
+C:\Users\Luisdela\Desktop\TUTORIAL PROJECTS\Challenges\CSChallengeWknd1\CSChallengeWknd1\obj\Debug\CSChallengeWknd1.pdb
